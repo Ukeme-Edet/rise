@@ -1,0 +1,69 @@
+body {
+	font-family: "Arial", sans-serif;
+	line-height: 1.6;
+	margin: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #f5f5f5;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 0;
+	color: #333;
+	text-align: center;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.video-links {
+	list-style: none;
+	padding: 0;
+}
+
+.video-links li {
+	margin-bottom: 10px;
+}
+
+.intro {
+	padding: 20px;
+}
+
+.videos {
+	background-color: #eee;
+	padding: 20px;
+}
+
+.feedback {
+	border-top: 1px solid #ddd;
+	padding: 20px;
+	text-align: center;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+/* You can add more styles here for specific elements, fonts, colors, etc. */
