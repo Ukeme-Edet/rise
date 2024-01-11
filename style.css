@@ -216,7 +216,7 @@ footer > p {
 
 .card:hover {
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-	transform: scale(1.02);
+	transform: scale(1.01);
 }
 
 .card iframe {
