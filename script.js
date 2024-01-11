@@ -1,16 +1,18 @@
-const videos = document.querySelector(".videos");
+const cards = document.querySelectorAll(".card");
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
-		if (entry.isIntersecting) {
-			videos.classList.add("show");
-		} else if (!entry.isIntersecting) {
-			videos.classList.remove("show");
+		if (entry.intersectionRatio > 0) {
+			entry.target.classList.add("show");
+		} else {
+			entry.target.classList.remove("show");
 		}
 	});
 });
 
-observer.observe(videos);
+cards.forEach((card) => {
+	observer.observe(card);
+});
 
 const paragraphs = document.querySelector(".intro").querySelectorAll("p");
 

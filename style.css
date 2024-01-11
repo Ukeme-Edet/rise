@@ -9,6 +9,7 @@ body {
 	margin: 20px;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 	background-color: #eee;
 	@keyframes circle-in-center {
 		from {
@@ -86,7 +87,7 @@ a:hover {
 }
 
 .video-links li a {
-	color: #333
+	color: #333;
 }
 
 .intro > div {
@@ -127,14 +128,6 @@ a:hover {
 .videos {
 	background-color: #d5d5d5;
 	padding: 20px;
-	scale: 0;
-	opacity: 0;
-	transition: 0.5s all ease-in-out;
-}
-
-.show {
-	scale: 1;
-	opacity: 1;
 }
 
 .videos > p {
@@ -197,4 +190,68 @@ footer > p {
 	color: #fff;
 }
 
-/* You can add more styles here for specific elements, fonts, colors, etc. */
+.cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.cards > h1 {
+	text-align: center;
+}
+
+.card {
+	background: white;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	gap: 40px;
+	height: 360px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	align-items: center;
+	scale: 0;
+	opacity: 0;
+	transition: 0.35s all ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	transform: scale(1.02);
+}
+
+.card iframe {
+	border-radius: 15px;
+	width: 35%;
+}
+
+.card > div {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+}
+
+.card > h2 {
+	margin: 0;
+}
+
+.iframes {
+	background: #d5d5d5;
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		flex-direction: column;
+		height: auto;
+	}
+	.card iframe {
+		width: 100%;
+	}
+	.card > div {
+		width: 100%;
+	}
+}
+
+.show {
+	scale: 1;
+	opacity: 1;
+}
