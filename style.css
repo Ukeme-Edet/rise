@@ -54,6 +54,7 @@ a {
 	background-color: grey;
 	width: 100vw;
 	height: 10px;
+	z-index: 1000;
 	position: fixed;
 }
 
@@ -249,6 +250,21 @@ footer > p {
 	.card > div {
 		width: 100%;
 	}
+}
+
+.intro > div > p {
+	opacity: 0;
+	transform: translate(100px);
+	transition: 0.35s all ease-in-out;
+}
+
+.intro > div > p.show {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.heart {
+	color: red;
 }
 
 .show {
