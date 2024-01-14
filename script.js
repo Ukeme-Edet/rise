@@ -16,10 +16,6 @@ cards.forEach((card) => {
 
 const paragraphs = document.querySelector(".intro").querySelectorAll("p");
 
-paragraphs.forEach((paragraph) => {
-	observer.observe(paragraph);
-});
-
 paragraphs.forEach((paragraph, i) => {
 	if (i % 2 === 0) paragraph.style.textAlign = "left";
 });

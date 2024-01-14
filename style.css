@@ -252,17 +252,6 @@ footer > p {
 	}
 }
 
-.intro > div > p {
-	opacity: 0;
-	transform: translate(100px);
-	transition: 0.35s all ease-in-out;
-}
-
-.intro > div > p.show {
-	opacity: 1;
-	transform: translateX(0);
-}
-
 .heart {
 	color: red;
 }
